@@ -81,16 +81,18 @@ export default function Navbar() {
                   className="group-hover:rotate-180 transition-transform duration-200"
                 />
               </button>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl shadow-navy/10 p-2 hidden group-hover:block z-50">
-                {services.map((s) => (
-                  <a
-                    key={s}
-                    href="#services"
-                    className="block px-3 py-2.5 text-sm text-gray-600 hover:bg-gold/10 hover:text-navy rounded-lg transition-all"
-                  >
-                    {s}
-                  </a>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 pt-3 w-72 hidden group-hover:block z-50">
+                <div className="bg-white border border-gray-200 rounded-xl shadow-2xl shadow-navy/10 p-2">
+                  {services.map((s) => (
+                    <a
+                      key={s}
+                      href="#services"
+                      className="block px-3 py-2.5 text-sm text-gray-600 hover:bg-gold/10 hover:text-navy rounded-lg transition-all"
+                    >
+                      {s}
+                    </a>
+                  ))}
+                </div>
               </div>
             </li>
             <li>
